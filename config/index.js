@@ -33,13 +33,13 @@ export const config = {
       // 想要发送的人的名字
       name: "小马0",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "",
+      id: "ooOdX60J4O3NCQ3uK7YLYdsylXJU",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "",
+      useTemplateId: "N1nbBocvUh9Y9HSrg4O9rxWr2KoX4UzzglA-tLBSBLM",
       // 所在省份
       province: "甘肃",
       // 所在城市
-      city: "广河",
+      city: "临夏",
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '02-01',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
@@ -63,30 +63,46 @@ export const config = {
         {"keyword": "marry_day", date: "2021-04-11"},
         // 上次见面
         {"keyword": "ex_day", date: "2021-06-01"},
+      {"keyword": "lover_prattle", contents: [
       "因为太喜欢你，所以看谁都像是情敌。",
       "申请成为你爱里的永久居民。",
       "你很傻，你很笨，可我还是很羡慕你，因为你有我",
       "遇见你，就好像捡到了100斤的运气",
     ]},
-    },
+  ],
     {
       name: "小马1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      id: "ooOdX60J4O3NCQ3uK7YLYdsylXJU",
+      useTemplateId: "N1nbBocvUh9Y9HSrg4O9rxWr2KoX4UzzglA-tLBSBLM",
+      province: "甘肃",
+      city: "临夏",
+      horoscopeDate: '02-01',
+      horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    {
+      festivals: [{"type": "*生日", "name": "小马", "year": "1996", "date": "02-01"},
+        {"type": "节日", "name": "相遇", "year": "2020", "date": "03-29"},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {"type": "生日", "name": "小崔", "year": "1996", "date": "02-26"},
+        {"type": "节日", "name": "相恋", "year": "2021", "date": "04-11"},],
+      customizedDateList: [ // 在一起的日子
+        {"keyword": "love_day", date: "2021-03-29"},
+        // 相恋
+        {"keyword": "marry_day", date: "2021-04-11"},
+        // 上次见面
+        {"keyword": "ex_day", date: "2021-06-01"},
+      {"keyword": "lover_prattle", contents: [
+      "因为太喜欢你，所以看谁都像是情敌。",
+      "申请成为你爱里的永久居民。",
+      "你很傻，你很笨，可我还是很羡慕你，因为你有我",
+      "遇见你，就好像捡到了100斤的运气",
+    ]},
+  ],]
+       {
       name: "小马2",
       id: "",
       useTemplateId: "",
-      province: "",
-      city: "",
+      province: "甘肃",
+      city: "临夏",
       horoscopeDate: '',
       horoscopeDateType: '',
       openUrl: "https://wangxinleo.cn",
