@@ -20,9 +20,9 @@ export const config = {
    *    // 想要发送的人的名字
    *    name: "小马0",
    *    // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-   *    id: "ooOdX60J4O3NCQ3uK7YLYdsylXJU",ooOdX62AeG79MV3ffVpSfnUMPMO0
+   *    id: "ooOdX60J4O3NCQ3uK7YLYdsylXJU",
    *    // 你想对他发送的模板消息的模板ID
-   *    useTemplateId: "	N1nbBocvUh9Y9HSrg4O9rxWr2KoX4UzzglA-tLBSBLM",
+   *    useTemplateId: "N1nbBocvUh9Y9HSrg4O9rxWr2KoX4UzzglA-tLBSBLM",
    *    // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
    *    openUrl: "https://wangxinleo.cn"
    *   },
@@ -99,36 +99,66 @@ export const config = {
   ],]
        {
       name: "小马2",
-      id: "",
-      useTemplateId: "",
+      id: "ooOdX60J4O3NCQ3uK7YLYdsylXJU",
+      useTemplateId: "N1nbBocvUh9Y9HSrg4O9rxWr2KoX4UzzglA-tLBSBLM",
       province: "甘肃",
       city: "临夏",
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      horoscopeDate: '02-01',
+      horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
+      festivals: [ [{"type": "*生日", "name": "小马", "year": "1996", "date": "02-01"},
+        {"type": "节日", "name": "相遇", "year": "2020", "date": "03-29"},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {"type": "生日", "name": "小崔", "year": "1996", "date": "02-26"},
+        {"type": "节日", "name": "相恋", "year": "2021", "date": "04-11"},]
+      customizedDateList: [ // 在一起的日子
+        {"keyword": "love_day", date: "2021-03-29"},
+        // 相恋
+        {"keyword": "marry_day", date: "2021-04-11"},
+        // 上次见面
+        {"keyword": "ex_day", date: "2021-06-01"},
+      {"keyword": "lover_prattle", contents: [
+      "因为太喜欢你，所以看谁都像是情敌。",
+      "申请成为你爱里的永久居民。",
+      "你很傻，你很笨，可我还是很羡慕你，因为你有我",
+      "遇见你，就好像捡到了100斤的运气",
+    ]},
+  ],]
     },
     {
       name: "小马3",
-      id: "",
-      useTemplateId: "",
+      id: "ooOdX60J4O3NCQ3uK7YLYdsylXJU",
+      useTemplateId: "N1nbBocvUh9Y9HSrg4O9rxWr2KoX4UzzglA-tLBSBLM",
       province: "甘肃",
       city: "广河",
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      horoscopeDate: '02-01',
+      horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-  ],
+      festivals: [ [{"type": "*生日", "name": "小马", "year": "1996", "date": "02-01"},
+        {"type": "节日", "name": "相遇", "year": "2020", "date": "03-29"},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {"type": "生日", "name": "小崔", "year": "1996", "date": "02-26"},
+        {"type": "节日", "name": "相恋", "year": "2021", "date": "04-11"},]
+      customizedDateList: [ // 在一起的日子
+        {"keyword": "love_day", date: "2021-03-29"},
+        // 相恋
+        {"keyword": "marry_day", date: "2021-04-11"},
+        // 上次见面
+        {"keyword": "ex_day", date: "2021-06-01"},
+      {"keyword": "lover_prattle", contents: [
+      "因为太喜欢你，所以看谁都像是情敌。",
+      "申请成为你爱里的永久居民。",
+      "你很傻，你很笨，可我还是很羡慕你，因为你有我",
+      "遇见你，就好像捡到了100斤的运气",
+    ]},
+  ]
 
   /**
    * 【推送完成提醒】 相关，主要用来展示发送是否成功/失败的数据
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "",
+  CALLBACK_TEMPLATE_ID: "N1nbBocvUh9Y9HSrg4O9rxWr2KoX4UzzglA-tLBSBLM ",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -136,7 +166,7 @@ export const config = {
       // 一般都填自己
       name: "自己",
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "",
+      id: "ooOdX60J4O3NCQ3uK7YLYdsylXJU",",
     },
   ],
 
@@ -147,9 +177,9 @@ export const config = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "广东",
+  PROVINCE: "甘肃",
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: "惠州",
+  CITY: "临夏",
 
   /** 重要节日相关 */
 
