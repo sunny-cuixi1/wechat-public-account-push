@@ -6,12 +6,12 @@ export const config = {
   // 公众号APP_ID
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_ID: "wxfe5a06397e9591ba",
+  APP_ID: "wx63f1ecadddaafa0e",
 
   // 公众号APP_SECRET
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_SECRET: "56725481e352991df9a0858be62a98ea",
+  APP_SECRET: "eb8e97ce639234186a02e9efc929b5db",
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如
@@ -20,9 +20,9 @@ export const config = {
    *    // 想要发送的人的名字
    *    name: "小马0",
    *    // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-   *    id: "ooOdX60J4O3NCQ3uK7YLYdsylXJU",
+   *    id: "osQma5p0zqk6JGemSQb0hKY_-u8s",
    *    // 你想对他发送的模板消息的模板ID
-   *    useTemplateId: "N1nbBocvUh9Y9HSrg4O9rxWr2KoX4UzzglA-tLBSBLM",
+   *    useTemplateId: "	ycfuq_PuK7ugluU19v9ImIhZRi1SwkGP9o3Wr5o-KOM",
    *    // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
    *    openUrl: "https://wangxinleo.cn"
    *   },
